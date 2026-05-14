@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Decoration carte 1 : Pivoine Sarah Bernhardt rose poudre + 2 feuilles -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Decoration aquarelle : pivoine rose">
+  <defs>
+    <filter id="wash-card-peony" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Feuille gauche en arriere-plan -->
+  <g transform="translate(8 65) rotate(-35) scale(0.5)" opacity="0.78">
+    <path d="M25,5 C12,18 8,42 14,68 C18,85 23,96 25,96 C27,96 32,85 36,68 C42,42 38,18 25,5 Z" fill="#9CB382" opacity="0.85"/>
+    <path d="M25,10 C25,30 25,60 25,90" stroke="#6F8556" stroke-width="0.8" stroke-linecap="round" opacity="0.7" fill="none"/>
+  </g>
+  <!-- Feuille droite en arriere-plan -->
+  <g transform="translate(72 70) rotate(40) scale(0.5)" opacity="0.78">
+    <path d="M25,8 C15,22 10,46 14,72 C17,86 23,94 25,94 C27,94 31,86 36,72 C42,46 35,22 25,8 Z" fill="#88A06F" opacity="0.82"/>
+    <path d="M25,14 C26,32 27,60 25,88" stroke="#5D7048" stroke-width="0.8" stroke-linecap="round" opacity="0.65" fill="none"/>
+  </g>
+
+  <!-- Pivoine centrale, scale ~0.95 -->
+  <g transform="translate(60 60)">
+    <!-- Wash background -->
+    <ellipse cx="0" cy="2" rx="48" ry="46" fill="#F8C8D5" opacity="0.42" filter="url(#wash-card-peony)"/>
+
+    <!-- Outer 8 petals -->
+    <g fill="#F2A7B8" opacity="0.93">
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(45 0 2)"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(90 0 2)"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(135 0 2)"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(180 0 2)"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(225 0 2)"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(270 0 2)"/>
+      <path d="M0,2 C-22,5 -26,-30 0,-46 C26,-30 22,5 0,2 Z" transform="rotate(315 0 2)"/>
+    </g>
+
+    <!-- Inner 5 petals -->
+    <g fill="#E68FA7" opacity="0.88">
+      <path d="M0,2 C-11,4 -13,-22 0,-30 C13,-22 11,4 0,2 Z" transform="rotate(22 0 2)"/>
+      <path d="M0,2 C-11,4 -13,-22 0,-30 C13,-22 11,4 0,2 Z" transform="rotate(94 0 2)"/>
+      <path d="M0,2 C-11,4 -13,-22 0,-30 C13,-22 11,4 0,2 Z" transform="rotate(166 0 2)"/>
+      <path d="M0,2 C-11,4 -13,-22 0,-30 C13,-22 11,4 0,2 Z" transform="rotate(238 0 2)"/>
+      <path d="M0,2 C-11,4 -13,-22 0,-30 C13,-22 11,4 0,2 Z" transform="rotate(310 0 2)"/>
+    </g>
+
+    <!-- Coeur sature -->
+    <circle cx="0" cy="2" r="5" fill="#B96687" opacity="0.85"/>
+    <circle cx="-1" cy="1" r="1.8" fill="#7E3852" opacity="0.7"/>
+  </g>
+</svg>

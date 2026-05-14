@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Floraison · bande horizontale basse pleine largeur, sans cascade.
+  Symetrie inverse de la bande haute (sans coude vertical). 3 rangees denses.
+  ViewBox 1920x200.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" preserveAspectRatio="xMidYMin meet" role="img" aria-label="Bande florale aquarelle pleine largeur : pivoines, renoncules, anemones, marguerites, tulipes, branches de cerisier">
+  <defs>
+    <filter id="wash-soft-b" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="0.55"/>
+    </filter>
+
+    <!-- Library identique a band-top-cascade.svg (independance par fichier) -->
+    <symbol id="peony-rose" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="52" rx="44" ry="42" fill="#F8C8D5" opacity="0.42" filter="url(#wash-soft-b)"/>
+      <g fill="#F2A7B8" opacity="0.93">
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(45 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(90 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(135 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(180 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(225 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(270 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(315 50 52)"/>
+      </g>
+      <g fill="#E68FA7" opacity="0.88">
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(22 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(94 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(166 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(238 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(310 50 52)"/>
+      </g>
+      <circle cx="50" cy="52" r="4.5" fill="#B96687" opacity="0.85"/>
+      <circle cx="48" cy="51" r="1.6" fill="#7E3852" opacity="0.7"/>
+    </symbol>
+
+    <symbol id="peony-coral" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="52" rx="44" ry="42" fill="#FAC5AC" opacity="0.42" filter="url(#wash-soft-b)"/>
+      <g fill="#F5A68A" opacity="0.93">
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(45 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(90 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(135 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(180 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(225 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(270 50 52)"/>
+        <path d="M50,52 C30,55 26,24 50,10 C74,24 70,55 50,52 Z" transform="rotate(315 50 52)"/>
+      </g>
+      <g fill="#EE8F6D" opacity="0.88">
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(22 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(94 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(166 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(238 50 52)"/>
+        <path d="M50,52 C40,54 38,32 50,22 C62,32 60,54 50,52 Z" transform="rotate(310 50 52)"/>
+      </g>
+      <circle cx="50" cy="52" r="4.5" fill="#D87850" opacity="0.85"/>
+      <circle cx="48" cy="51" r="1.6" fill="#A04F2E" opacity="0.7"/>
+    </symbol>
+
+    <symbol id="ranunculus-orange" viewBox="0 0 100 100">
+      <circle cx="50" cy="52" r="38" fill="#F8B783" opacity="0.4" filter="url(#wash-soft-b)"/>
+      <g fill="#F08D3F" opacity="0.92">
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(45 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(90 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(135 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(180 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(225 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(270 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(315 50 52)"/>
+      </g>
+      <g fill="#D87A2D" opacity="0.9">
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(22 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(82 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(142 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(202 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(262 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(322 50 52)"/>
+      </g>
+      <circle cx="50" cy="52" r="6" fill="#A85D1F" opacity="0.85"/>
+      <circle cx="49" cy="51" r="2.4" fill="#6E3C0F" opacity="0.78"/>
+    </symbol>
+
+    <symbol id="ranunculus-yellow" viewBox="0 0 100 100">
+      <circle cx="50" cy="52" r="38" fill="#F9DC85" opacity="0.4" filter="url(#wash-soft-b)"/>
+      <g fill="#F4C430" opacity="0.92">
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(45 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(90 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(135 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(180 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(225 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(270 50 52)"/>
+        <path d="M50,52 C40,55 36,38 50,30 C64,38 60,55 50,52 Z" transform="rotate(315 50 52)"/>
+      </g>
+      <g fill="#D9A91C" opacity="0.9">
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(22 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(82 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(142 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(202 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(262 50 52)"/>
+        <path d="M50,52 C44,53 42,40 50,36 C58,40 56,53 50,52 Z" transform="rotate(322 50 52)"/>
+      </g>
+      <circle cx="50" cy="52" r="6" fill="#A37710" opacity="0.85"/>
+      <circle cx="49" cy="51" r="2.4" fill="#6E4E08" opacity="0.78"/>
+    </symbol>
+
+    <symbol id="anemone" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="52" rx="40" ry="40" fill="#E07A8E" opacity="0.32" filter="url(#wash-soft-b)"/>
+      <g fill="#C1294A" opacity="0.93">
+        <path d="M50,52 C40,52 32,40 32,28 C32,16 40,8 50,8 C60,8 68,16 68,28 C68,40 60,52 50,52 Z"/>
+        <path d="M50,52 C40,52 32,40 32,28 C32,16 40,8 50,8 C60,8 68,16 68,28 C68,40 60,52 50,52 Z" transform="rotate(60 50 52)"/>
+        <path d="M50,52 C40,52 32,40 32,28 C32,16 40,8 50,8 C60,8 68,16 68,28 C68,40 60,52 50,52 Z" transform="rotate(120 50 52)"/>
+        <path d="M50,52 C40,52 32,40 32,28 C32,16 40,8 50,8 C60,8 68,16 68,28 C68,40 60,52 50,52 Z" transform="rotate(180 50 52)"/>
+        <path d="M50,52 C40,52 32,40 32,28 C32,16 40,8 50,8 C60,8 68,16 68,28 C68,40 60,52 50,52 Z" transform="rotate(240 50 52)"/>
+        <path d="M50,52 C40,52 32,40 32,28 C32,16 40,8 50,8 C60,8 68,16 68,28 C68,40 60,52 50,52 Z" transform="rotate(300 50 52)"/>
+      </g>
+      <g fill="#8A1A35" opacity="0.6">
+        <ellipse cx="50" cy="40" rx="6" ry="9"/>
+        <ellipse cx="50" cy="40" rx="6" ry="9" transform="rotate(60 50 52)"/>
+        <ellipse cx="50" cy="40" rx="6" ry="9" transform="rotate(120 50 52)"/>
+        <ellipse cx="50" cy="40" rx="6" ry="9" transform="rotate(180 50 52)"/>
+        <ellipse cx="50" cy="40" rx="6" ry="9" transform="rotate(240 50 52)"/>
+        <ellipse cx="50" cy="40" rx="6" ry="9" transform="rotate(300 50 52)"/>
+      </g>
+      <circle cx="50" cy="52" r="10" fill="#1A1A2E" opacity="0.95"/>
+      <g fill="#1A1A2E" opacity="0.8">
+        <circle cx="50" cy="40" r="1.2"/>
+        <circle cx="58" cy="46" r="1.2"/>
+        <circle cx="58" cy="58" r="1.2"/>
+        <circle cx="50" cy="64" r="1.2"/>
+        <circle cx="42" cy="58" r="1.2"/>
+        <circle cx="42" cy="46" r="1.2"/>
+      </g>
+    </symbol>
+
+    <symbol id="tulip-orange" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="55" rx="22" ry="38" fill="#F8B783" opacity="0.4" filter="url(#wash-soft-b)"/>
+      <path d="M35,80 C28,75 24,55 28,30 C32,15 40,10 44,18 C46,30 46,60 42,78 C40,84 38,84 35,80 Z" fill="#E8782B" opacity="0.88"/>
+      <path d="M65,80 C72,75 76,55 72,30 C68,15 60,10 56,18 C54,30 54,60 58,78 C60,84 62,84 65,80 Z" fill="#E8782B" opacity="0.88"/>
+      <path d="M50,82 C40,80 36,55 38,28 C40,12 50,8 50,8 C50,8 60,12 62,28 C64,55 60,80 50,82 Z" fill="#F08D3F" opacity="0.94"/>
+      <path d="M48,28 C46,42 47,60 50,75 C53,60 54,42 52,28 C50,22 50,22 48,28 Z" fill="#F2A7B8" opacity="0.55"/>
+      <path d="M48,82 C48,88 47,92 46,95 C49,93 51,93 54,95 C53,92 52,88 52,82 Z" fill="#9CB382" opacity="0.85"/>
+    </symbol>
+
+    <symbol id="tulip-pink" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="55" rx="22" ry="38" fill="#F8D5DD" opacity="0.45" filter="url(#wash-soft-b)"/>
+      <path d="M35,80 C28,75 24,55 28,30 C32,15 40,10 44,18 C46,30 46,60 42,78 C40,84 38,84 35,80 Z" fill="#E89AAC" opacity="0.88"/>
+      <path d="M65,80 C72,75 76,55 72,30 C68,15 60,10 56,18 C54,30 54,60 58,78 C60,84 62,84 65,80 Z" fill="#E89AAC" opacity="0.88"/>
+      <path d="M50,82 C40,80 36,55 38,28 C40,12 50,8 50,8 C50,8 60,12 62,28 C64,55 60,80 50,82 Z" fill="#F2A7B8" opacity="0.94"/>
+      <path d="M48,28 C46,42 47,60 50,75 C53,60 54,42 52,28 C50,22 50,22 48,28 Z" fill="#FBF3E3" opacity="0.55"/>
+      <path d="M48,82 C48,88 47,92 46,95 C49,93 51,93 54,95 C53,92 52,88 52,82 Z" fill="#9CB382" opacity="0.85"/>
+    </symbol>
+
+    <symbol id="daisy" viewBox="0 0 100 100">
+      <circle cx="50" cy="52" r="34" fill="#FBF3E3" opacity="0.25" filter="url(#wash-soft-b)"/>
+      <g fill="#FBF3E3" opacity="0.95" stroke="#E8DBC0" stroke-width="0.6">
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(30 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(60 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(90 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(120 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(150 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(180 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(210 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(240 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(270 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(300 50 50)"/>
+        <path d="M50,50 C47,45 46,28 48,14 C49,8 51,8 52,14 C54,28 53,45 50,50 Z" transform="rotate(330 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="8" fill="#F4C430" opacity="0.95"/>
+      <circle cx="50" cy="50" r="8" fill="#D9A91C" opacity="0.55"/>
+      <g fill="#A37710" opacity="0.85">
+        <circle cx="48" cy="48" r="0.9"/>
+        <circle cx="52" cy="48" r="0.9"/>
+        <circle cx="50" cy="51" r="0.9"/>
+        <circle cx="47" cy="52" r="0.9"/>
+        <circle cx="53" cy="52" r="0.9"/>
+      </g>
+    </symbol>
+
+    <symbol id="cherry-blossom" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="32" fill="#FBDFE6" opacity="0.4" filter="url(#wash-soft-b)"/>
+      <g fill="#FBE2EB" opacity="0.94" stroke="#F2A7B8" stroke-width="0.7">
+        <path d="M50,52 C38,52 28,38 32,22 C36,12 50,10 50,16 C50,10 64,12 68,22 C72,38 62,52 50,52 Z"/>
+        <path d="M50,52 C38,52 28,38 32,22 C36,12 50,10 50,16 C50,10 64,12 68,22 C72,38 62,52 50,52 Z" transform="rotate(72 50 52)"/>
+        <path d="M50,52 C38,52 28,38 32,22 C36,12 50,10 50,16 C50,10 64,12 68,22 C72,38 62,52 50,52 Z" transform="rotate(144 50 52)"/>
+        <path d="M50,52 C38,52 28,38 32,22 C36,12 50,10 50,16 C50,10 64,12 68,22 C72,38 62,52 50,52 Z" transform="rotate(216 50 52)"/>
+        <path d="M50,52 C38,52 28,38 32,22 C36,12 50,10 50,16 C50,10 64,12 68,22 C72,38 62,52 50,52 Z" transform="rotate(288 50 52)"/>
+      </g>
+      <g stroke="#D9A91C" stroke-width="0.8" stroke-linecap="round" opacity="0.85">
+        <line x1="50" y1="52" x2="46" y2="42"/>
+        <line x1="50" y1="52" x2="50" y2="40"/>
+        <line x1="50" y1="52" x2="54" y2="42"/>
+        <line x1="50" y1="52" x2="58" y2="48"/>
+        <line x1="50" y1="52" x2="42" y2="48"/>
+      </g>
+      <g fill="#F4C430" opacity="0.95">
+        <circle cx="46" cy="42" r="1.5"/>
+        <circle cx="50" cy="40" r="1.5"/>
+        <circle cx="54" cy="42" r="1.5"/>
+        <circle cx="58" cy="48" r="1.4"/>
+        <circle cx="42" cy="48" r="1.4"/>
+      </g>
+      <circle cx="50" cy="52" r="2.5" fill="#F4C430" opacity="0.92"/>
+    </symbol>
+
+    <symbol id="leaf-a" viewBox="0 0 50 100">
+      <path d="M25,5 C12,18 8,42 14,68 C18,85 23,96 25,96 C27,96 32,85 36,68 C42,42 38,18 25,5 Z" fill="#9CB382" opacity="0.85"/>
+      <path d="M25,10 C25,30 25,60 25,90" stroke="#6F8556" stroke-width="0.8" stroke-linecap="round" opacity="0.7" fill="none"/>
+    </symbol>
+    <symbol id="leaf-b" viewBox="0 0 50 100">
+      <path d="M25,8 C15,22 10,46 14,72 C17,86 23,94 25,94 C27,94 31,86 36,72 C42,46 35,22 25,8 Z" fill="#88A06F" opacity="0.82"/>
+      <path d="M25,14 C26,32 27,60 25,88" stroke="#5D7048" stroke-width="0.8" stroke-linecap="round" opacity="0.65" fill="none"/>
+    </symbol>
+  </defs>
+
+  <!-- ====================================================== -->
+  <!-- COMPOSITION : 3 rangees denses, pleine largeur          -->
+  <!-- ====================================================== -->
+
+  <!-- Feuillage back -->
+  <g class="back-leaves" opacity="0.75">
+    <use href="#leaf-a" x="20"   y="-20" width="32" height="76" transform="rotate(180 36 18)"/>
+    <use href="#leaf-b" x="130"  y="-15" width="28" height="68" transform="rotate(195 144 19)"/>
+    <use href="#leaf-a" x="240"  y="-20" width="32" height="76" transform="rotate(170 256 18)"/>
+    <use href="#leaf-b" x="360"  y="-15" width="28" height="68" transform="rotate(200 374 19)"/>
+    <use href="#leaf-a" x="480"  y="-20" width="32" height="76" transform="rotate(175 496 18)"/>
+    <use href="#leaf-b" x="600"  y="-12" width="28" height="68" transform="rotate(190 614 22)"/>
+    <use href="#leaf-a" x="720"  y="-20" width="32" height="76" transform="rotate(165 736 18)"/>
+    <use href="#leaf-b" x="840"  y="-15" width="28" height="68" transform="rotate(205 854 19)"/>
+    <use href="#leaf-a" x="960"  y="-20" width="32" height="76" transform="rotate(180 976 18)"/>
+    <use href="#leaf-b" x="1080" y="-12" width="28" height="68" transform="rotate(190 1094 22)"/>
+    <use href="#leaf-a" x="1200" y="-20" width="32" height="76" transform="rotate(170 1216 18)"/>
+    <use href="#leaf-b" x="1320" y="-15" width="28" height="68" transform="rotate(200 1334 19)"/>
+    <use href="#leaf-a" x="1440" y="-20" width="32" height="76" transform="rotate(180 1456 18)"/>
+    <use href="#leaf-b" x="1560" y="-12" width="28" height="68" transform="rotate(195 1574 22)"/>
+    <use href="#leaf-a" x="1680" y="-20" width="32" height="76" transform="rotate(175 1696 18)"/>
+    <use href="#leaf-b" x="1800" y="-15" width="28" height="68" transform="rotate(205 1814 19)"/>
+  </g>
+
+  <!-- Rangee 1 (haut, y=0-50) -->
+  <g class="band-row-1">
+    <use href="#peony-coral"       x="-10" y="-5"  width="120" height="120"/>
+    <use href="#anemone"           x="90"  y="10"  width="80"  height="80"/>
+    <use href="#ranunculus-yellow" x="160" y="15"  width="70"  height="70"/>
+    <use href="#daisy"             x="220" y="20"  width="58"  height="58"/>
+    <use href="#peony-rose"        x="270" y="0"   width="115" height="115"/>
+    <use href="#tulip-pink"        x="370" y="-8"  width="80"  height="115"/>
+    <use href="#ranunculus-orange" x="445" y="15"  width="68"  height="68"/>
+    <use href="#cherry-blossom"    x="505" y="22"  width="55"  height="55"/>
+    <use href="#peony-coral"       x="555" y="5"   width="105" height="105"/>
+    <use href="#anemone"           x="650" y="15"  width="78"  height="78"/>
+    <use href="#daisy"             x="715" y="22"  width="58"  height="58"/>
+    <use href="#ranunculus-yellow" x="770" y="18"  width="68"  height="68"/>
+    <use href="#peony-rose"        x="830" y="0"   width="110" height="110"/>
+    <use href="#tulip-orange"      x="925" y="-5"  width="80"  height="110"/>
+    <use href="#ranunculus-orange" x="1000" y="18" width="65"  height="65"/>
+    <use href="#cherry-blossom"    x="1055" y="22" width="55"  height="55"/>
+    <use href="#peony-coral"       x="1100" y="0"  width="110" height="110"/>
+    <use href="#anemone"           x="1200" y="12" width="80"  height="80"/>
+    <use href="#daisy"             x="1270" y="20" width="58"  height="58"/>
+    <use href="#ranunculus-yellow" x="1320" y="18" width="68"  height="68"/>
+    <use href="#peony-rose"        x="1380" y="-5" width="115" height="115"/>
+    <use href="#tulip-pink"        x="1480" y="-8" width="80"  height="115"/>
+    <use href="#ranunculus-orange" x="1555" y="15" width="68"  height="68"/>
+    <use href="#cherry-blossom"    x="1620" y="22" width="55"  height="55"/>
+    <use href="#peony-coral"       x="1665" y="0"  width="110" height="110"/>
+    <use href="#anemone"           x="1760" y="12" width="80"  height="80"/>
+    <use href="#peony-rose"        x="1830" y="-5" width="105" height="105"/>
+  </g>
+
+  <!-- Rangee 2 (milieu, y=50-110) -->
+  <g class="band-row-2">
+    <use href="#anemone"           x="20"   y="65" width="72"  height="72"/>
+    <use href="#ranunculus-orange" x="85"   y="70" width="62"  height="62"/>
+    <use href="#peony-rose"        x="140"  y="55" width="92"  height="92"/>
+    <use href="#daisy"             x="225"  y="72" width="55"  height="55"/>
+    <use href="#tulip-orange"      x="275"  y="55" width="72"  height="100"/>
+    <use href="#cherry-blossom"    x="345"  y="72" width="48"  height="48"/>
+    <use href="#peony-coral"       x="385"  y="65" width="88"  height="88"/>
+    <use href="#ranunculus-yellow" x="470"  y="70" width="62"  height="62"/>
+    <use href="#daisy"             x="525"  y="75" width="52"  height="52"/>
+    <use href="#peony-rose"        x="575"  y="58" width="95"  height="95"/>
+    <use href="#anemone"           x="665"  y="68" width="72"  height="72"/>
+    <use href="#ranunculus-orange" x="730"  y="72" width="62"  height="62"/>
+    <use href="#tulip-pink"        x="790"  y="55" width="70"  height="98"/>
+    <use href="#cherry-blossom"    x="855"  y="75" width="48"  height="48"/>
+    <use href="#peony-coral"       x="900"  y="62" width="92"  height="92"/>
+    <use href="#anemone"           x="990"  y="70" width="70"  height="70"/>
+    <use href="#ranunculus-yellow" x="1055" y="74" width="60"  height="60"/>
+    <use href="#peony-rose"        x="1110" y="60" width="90"  height="90"/>
+    <use href="#daisy"             x="1200" y="72" width="55"  height="55"/>
+    <use href="#tulip-orange"      x="1250" y="55" width="72"  height="100"/>
+    <use href="#cherry-blossom"    x="1320" y="74" width="48"  height="48"/>
+    <use href="#peony-coral"       x="1365" y="65" width="90"  height="90"/>
+    <use href="#ranunculus-orange" x="1450" y="70" width="62"  height="62"/>
+    <use href="#peony-rose"        x="1510" y="58" width="92"  height="92"/>
+    <use href="#anemone"           x="1600" y="68" width="72"  height="72"/>
+    <use href="#daisy"             x="1665" y="75" width="52"  height="52"/>
+    <use href="#tulip-pink"        x="1710" y="55" width="70"  height="100"/>
+    <use href="#peony-coral"       x="1780" y="62" width="90"  height="90"/>
+    <use href="#ranunculus-yellow" x="1870" y="72" width="60"  height="60"/>
+  </g>
+
+  <!-- Rangee 3 (bas, y=110-180) -->
+  <g class="band-row-3">
+    <use href="#ranunculus-yellow" x="0"    y="135" width="60"  height="60"/>
+    <use href="#peony-rose"        x="50"   y="120" width="80"  height="80"/>
+    <use href="#daisy"             x="130"  y="138" width="50"  height="50"/>
+    <use href="#cherry-blossom"    x="175"  y="140" width="48"  height="48"/>
+    <use href="#anemone"           x="220"  y="130" width="62"  height="62"/>
+    <use href="#peony-coral"       x="280"  y="125" width="75"  height="75"/>
+    <use href="#tulip-orange"      x="355"  y="120" width="62"  height="85"/>
+    <use href="#ranunculus-orange" x="415"  y="135" width="58"  height="58"/>
+    <use href="#daisy"             x="470"  y="140" width="48"  height="48"/>
+    <use href="#peony-rose"        x="510"  y="125" width="80"  height="80"/>
+    <use href="#anemone"           x="590"  y="130" width="62"  height="62"/>
+    <use href="#cherry-blossom"    x="650"  y="140" width="48"  height="48"/>
+    <use href="#ranunculus-yellow" x="695"  y="135" width="58"  height="58"/>
+    <use href="#peony-coral"       x="750"  y="125" width="75"  height="75"/>
+    <use href="#tulip-pink"        x="825"  y="118" width="60"  height="85"/>
+    <use href="#daisy"             x="885"  y="138" width="50"  height="50"/>
+    <use href="#peony-rose"        x="930"  y="122" width="80"  height="80"/>
+    <use href="#ranunculus-orange" x="1010" y="135" width="58"  height="58"/>
+    <use href="#anemone"           x="1065" y="130" width="62"  height="62"/>
+    <use href="#cherry-blossom"    x="1125" y="140" width="48"  height="48"/>
+    <use href="#peony-coral"       x="1170" y="125" width="75"  height="75"/>
+    <use href="#tulip-orange"      x="1245" y="118" width="62"  height="85"/>
+    <use href="#ranunculus-yellow" x="1305" y="135" width="58"  height="58"/>
+    <use href="#daisy"             x="1360" y="140" width="50"  height="50"/>
+    <use href="#peony-rose"        x="1402" y="122" width="80"  height="80"/>
+    <use href="#anemone"           x="1480" y="130" width="62"  height="62"/>
+    <use href="#peony-coral"       x="1540" y="125" width="75"  height="75"/>
+    <use href="#tulip-pink"        x="1612" y="118" width="60"  height="85"/>
+    <use href="#ranunculus-orange" x="1672" y="135" width="58"  height="58"/>
+    <use href="#daisy"             x="1728" y="138" width="50"  height="50"/>
+    <use href="#peony-rose"        x="1768" y="122" width="80"  height="80"/>
+    <use href="#cherry-blossom"    x="1850" y="140" width="48"  height="48"/>
+    <use href="#anemone"           x="1895" y="135" width="62"  height="62"/>
+  </g>
+
+  <!-- Feuillage avant -->
+  <g class="front-leaves" opacity="0.7">
+    <use href="#leaf-a" x="80"   y="90" width="22" height="52" transform="rotate(170 91 116)"/>
+    <use href="#leaf-b" x="270"  y="95" width="22" height="52" transform="rotate(200 281 121)"/>
+    <use href="#leaf-a" x="470"  y="92" width="22" height="52" transform="rotate(165 481 118)"/>
+    <use href="#leaf-b" x="660"  y="95" width="22" height="52" transform="rotate(205 671 121)"/>
+    <use href="#leaf-a" x="860"  y="90" width="22" height="52" transform="rotate(170 871 116)"/>
+    <use href="#leaf-b" x="1050" y="95" width="22" height="52" transform="rotate(195 1061 121)"/>
+    <use href="#leaf-a" x="1240" y="92" width="22" height="52" transform="rotate(175 1251 118)"/>
+    <use href="#leaf-b" x="1430" y="95" width="22" height="52" transform="rotate(200 1441 121)"/>
+    <use href="#leaf-a" x="1620" y="90" width="22" height="52" transform="rotate(170 1631 116)"/>
+    <use href="#leaf-b" x="1820" y="95" width="22" height="52" transform="rotate(195 1831 121)"/>
+  </g>
+</svg>

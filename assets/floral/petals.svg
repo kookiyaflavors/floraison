@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Library de petales filants individuels. ViewBox unique 0 0 60 100 par petale.
+  Referencee via <svg><use href="petals.svg#petal-rose-1"/></svg> dans la page.
+  Format : petale asymetrique Bezier, ratio ~1:2 longueur:largeur.
+  Couleurs : 5 nuances de la palette Floraison (rose poudre, corail, orange, jaune, rouge hibiscus).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="wash-petal-soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.3"/>
+    </filter>
+
+    <!-- ===== ROSE POUDRE ===== -->
+    <symbol id="petal-rose-1" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C18,12 14,35 18,62 C22,82 28,94 30,96 C32,94 38,82 42,62 C46,35 42,12 30,4 Z" fill="#F8C8D5" opacity="0.45" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C20,16 16,38 20,62 C24,80 28,92 30,92 C32,92 36,80 40,62 C44,38 40,16 30,8 Z" fill="#F2A7B8" opacity="0.93"/>
+      <path d="M30,22 C26,40 26,68 30,86 C34,68 34,40 30,22 Z" fill="#E68FA7" opacity="0.65"/>
+    </symbol>
+
+    <symbol id="petal-rose-2" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C16,14 12,30 16,52 C20,70 28,90 32,94 C36,86 44,68 46,50 C48,30 42,12 30,4 Z" fill="#F8C8D5" opacity="0.45" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C18,18 14,32 18,52 C22,68 30,86 32,88 C36,82 42,66 44,50 C46,32 40,16 30,8 Z" fill="#F2A7B8" opacity="0.93"/>
+      <path d="M28,24 C26,42 30,68 32,84 C34,68 38,42 32,24 Z" fill="#E68FA7" opacity="0.6"/>
+    </symbol>
+
+    <!-- ===== CORAIL NAISSANT ===== -->
+    <symbol id="petal-coral-1" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C18,12 14,35 18,62 C22,82 28,94 30,96 C32,94 38,82 42,62 C46,35 42,12 30,4 Z" fill="#FAC5AC" opacity="0.45" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C20,16 16,38 20,62 C24,80 28,92 30,92 C32,92 36,80 40,62 C44,38 40,16 30,8 Z" fill="#F5A68A" opacity="0.93"/>
+      <path d="M30,22 C26,40 26,68 30,86 C34,68 34,40 30,22 Z" fill="#EE8F6D" opacity="0.65"/>
+    </symbol>
+
+    <symbol id="petal-coral-2" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C16,14 12,30 16,52 C20,70 28,90 32,94 C36,86 44,68 46,50 C48,30 42,12 30,4 Z" fill="#FAC5AC" opacity="0.45" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C18,18 14,32 18,52 C22,68 30,86 32,88 C36,82 42,66 44,50 C46,32 40,16 30,8 Z" fill="#F5A68A" opacity="0.93"/>
+      <path d="M28,24 C26,42 30,68 32,84 C34,68 38,42 32,24 Z" fill="#EE8F6D" opacity="0.6"/>
+    </symbol>
+
+    <!-- ===== ORANGE RENONCULE ===== -->
+    <symbol id="petal-orange-1" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C18,12 14,35 18,62 C22,82 28,94 30,96 C32,94 38,82 42,62 C46,35 42,12 30,4 Z" fill="#F8B783" opacity="0.45" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C20,16 16,38 20,62 C24,80 28,92 30,92 C32,92 36,80 40,62 C44,38 40,16 30,8 Z" fill="#F08D3F" opacity="0.93"/>
+      <path d="M30,22 C26,40 26,68 30,86 C34,68 34,40 30,22 Z" fill="#D87A2D" opacity="0.62"/>
+    </symbol>
+
+    <!-- ===== JAUNE MARGUERITE ===== -->
+    <symbol id="petal-yellow-1" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C18,12 14,35 18,62 C22,82 28,94 30,96 C32,94 38,82 42,62 C46,35 42,12 30,4 Z" fill="#F9DC85" opacity="0.45" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C20,16 16,38 20,62 C24,80 28,92 30,92 C32,92 36,80 40,62 C44,38 40,16 30,8 Z" fill="#F4C430" opacity="0.93"/>
+      <path d="M30,22 C26,40 26,68 30,86 C34,68 34,40 30,22 Z" fill="#D9A91C" opacity="0.55"/>
+    </symbol>
+
+    <!-- ===== ROUGE HIBISCUS (rare, parcimonieux) ===== -->
+    <symbol id="petal-rouge-1" viewBox="0 0 60 100" overflow="visible">
+      <path d="M30,4 C16,14 12,30 16,52 C20,70 28,90 32,94 C36,86 44,68 46,50 C48,30 42,12 30,4 Z" fill="#E07A8E" opacity="0.4" filter="url(#wash-petal-soft)"/>
+      <path d="M30,8 C18,18 14,32 18,52 C22,68 30,86 32,88 C36,82 42,66 44,50 C46,32 40,16 30,8 Z" fill="#C1294A" opacity="0.92"/>
+      <path d="M28,24 C26,42 30,68 32,84 C34,68 38,42 32,24 Z" fill="#8A1A35" opacity="0.55"/>
+    </symbol>
+  </defs>
+</svg>

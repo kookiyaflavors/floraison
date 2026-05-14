@@ -1,0 +1,536 @@
+/* ================================================================
+   FLORAISON · LE DIMANCHE DE MAMAN
+   Niveau 3 · Capsule Floraison
+   Herite Niveau 1 (Marque Permanente) + Niveau 2 (Eclosion Nacree)
+   Override : surface unique Ivoire Chaud, palette enrichie, grammaire florale aquarelle
+   ================================================================ */
+
+/* === RESET === */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* === TOKENS (section 10 du design system) === */
+:root {
+  /* HERITAGE NIVEAU 1 */
+  --color-ivoire-chaud: #FBF3E3;
+  --color-bleu-nuit: #1A1A2E;
+
+  /* HERITAGE NIVEAU 2 (Eclosion Nacree) */
+  --color-rouge-hibiscus: #C1294A;
+  --color-rose-poudre: #F2A7B8;
+  --color-corail-naissant: #F5A68A;
+
+  /* EXTENSIONS NIVEAU 3 (Capsule Floraison) */
+  --color-orange-renoncule: #F08D3F;
+  --color-jaune-marguerite: #F4C430;
+  --color-vert-tendre: #9CB382;
+
+  /* SEMANTIC TOKENS FLORAISON */
+  --surface-floraison: var(--color-ivoire-chaud);
+  --text-floraison-primary: var(--color-bleu-nuit);
+  --accent-floraison-cta: var(--color-rouge-hibiscus);
+  --accent-floraison-signature: var(--color-bleu-nuit);
+
+  /* TYPOGRAPHY */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Raleway', 'Helvetica Neue', sans-serif;
+  --font-jewel: 'Pinyon Script', cursive;
+
+  /* SPACING */
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+  --block-padding: clamp(80px, 10vh, 120px);
+  --gutter: clamp(24px, 5vw, 72px);
+  --max-content: 1280px;
+
+  /* RADIUS */
+  --radius-subtle: 2px;
+  --radius-soft: 6px;
+
+  /* TRANSITIONS */
+  --transition-fast: 200ms ease-out;
+  --transition-default: 300ms ease-out;
+
+  /* HEADER */
+  --header-height: 64px;
+}
+
+/* === BASE === */
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  background: var(--surface-floraison);
+  color: var(--text-floraison-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; height: auto; }
+a { color: inherit; text-decoration: none; }
+
+/* Tous les titres en Cormorant Italic, herite design system */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: var(--text-floraison-primary);
+  line-height: 1.15;
+}
+
+/* === HEADER === */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px var(--gutter);
+  background-color: rgba(251, 243, 227, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  transition: opacity var(--transition-fast);
+}
+.header-logo:hover { opacity: 0.75; }
+
+.header-logo-img {
+  height: 48px;
+  width: auto;
+  filter: brightness(0.18) sepia(1) hue-rotate(200deg) saturate(2);
+  /* Filtre transforme le logo ivoire en bleu nuit pour le poser sur fond ivoire */
+}
+
+.header-back-link {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-floraison-primary);
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+.header-back-link:hover { opacity: 1; }
+
+/* === HERO === */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: calc(var(--header-height) + 60px) var(--gutter) var(--space-2xl);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-floral {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  margin-top: 320px;
+}
+
+.hero-pretitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--text-floraison-primary);
+  opacity: 0.65;
+  margin-bottom: var(--space-md);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(38px, 7vw, 86px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--text-floraison-primary);
+  margin-bottom: var(--space-md);
+}
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(17px, 2vw, 22px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-floraison-primary);
+  opacity: 0.78;
+  margin-bottom: var(--space-lg);
+  max-width: 520px;
+}
+
+/* === CTAs === */
+.cta {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: var(--transition-default);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: var(--radius-subtle);
+}
+
+.cta--primary {
+  background: transparent;
+  border: 0.7px solid var(--text-floraison-primary);
+  padding: 14px 36px;
+  font-size: 15px;
+  color: var(--text-floraison-primary);
+}
+.cta--primary:hover {
+  background: rgba(26, 26, 46, 0.045);
+}
+
+.cta--final {
+  background: var(--accent-floraison-cta);
+  border: none;
+  padding: 17px 44px;
+  font-size: 15px;
+  color: var(--color-ivoire-chaud);
+  box-shadow: 0 6px 22px rgba(193, 41, 74, 0.18);
+}
+.cta--final:hover {
+  filter: brightness(0.94);
+  box-shadow: 0 8px 28px rgba(193, 41, 74, 0.25);
+}
+
+.cta-secondary {
+  display: inline-block;
+  margin-top: 14px;
+  margin-left: 18px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text-floraison-primary);
+  opacity: 0.6;
+  letter-spacing: 0.04em;
+  transition: opacity var(--transition-fast);
+  vertical-align: middle;
+}
+.cta-secondary:hover { opacity: 1; }
+
+/* === HERO PHOTO === */
+.hero-photo {
+  padding: var(--space-2xl) var(--gutter);
+}
+.hero-photo-frame {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: var(--radius-soft);
+  background: linear-gradient(135deg, rgba(242, 167, 184, 0.18) 0%, rgba(245, 166, 138, 0.18) 50%, rgba(240, 141, 63, 0.12) 100%);
+}
+.hero-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-photo-frame img.img-placeholder {
+  opacity: 0;
+}
+/* Si la photo manque on garde l'arriere-plan degrade comme placeholder doux */
+
+/* === PETALES FILANTS === */
+.petals-field {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  pointer-events: none;
+  margin: -40px 0;
+}
+.petals-field--upper { height: 180px; margin-top: -90px; z-index: 3; }
+.petals-field--mid { height: 200px; }
+.petals-field--lower { height: 200px; }
+
+.petal {
+  position: absolute;
+  width: var(--size, 32px);
+  height: calc(var(--size, 32px) * 1.7);
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  transform: rotate(var(--rot, 0deg)) translate(-50%, -50%);
+  transform-origin: center;
+  overflow: visible;
+}
+
+/* === MANIFESTE === */
+.manifeste {
+  padding: var(--block-padding) var(--gutter);
+  text-align: center;
+}
+.manifeste-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.manifeste-opener {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 28px);
+  line-height: 1.3;
+  color: var(--text-floraison-primary);
+  opacity: 0.92;
+  margin-bottom: var(--space-lg);
+}
+.manifeste-body p {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-floraison-primary);
+  margin-bottom: var(--space-md);
+}
+.manifeste-body p:last-child { margin-bottom: 0; }
+
+/* === CARTES === */
+.cards {
+  padding: var(--block-padding) var(--gutter);
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(24px, 4vw, 56px);
+  max-width: var(--max-content);
+  margin: 0 auto;
+}
+.card {
+  border: 0.5px solid rgba(193, 41, 74, 0.2);
+  border-radius: 3px;
+  padding: 32px 24px 28px;
+  text-align: center;
+  background: var(--surface-floraison);
+  transition: border-color var(--transition-default), transform var(--transition-default);
+}
+.card:hover {
+  border-color: rgba(193, 41, 74, 0.4);
+  transform: translateY(-2px);
+}
+.card-floral {
+  margin: 0 auto 16px;
+  width: 120px;
+  height: 120px;
+}
+.card-floral img {
+  width: 100%;
+  height: 100%;
+}
+.card-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-floraison-primary);
+  margin-bottom: 8px;
+}
+.card-title em { font-style: italic; }
+.card-body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-floraison-primary);
+  opacity: 0.7;
+}
+
+/* === MECANIQUE === */
+.mecanique {
+  padding: var(--block-padding) var(--gutter);
+  text-align: center;
+}
+.mecanique-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 26px);
+  margin-bottom: var(--space-xl);
+}
+.mecanique-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 4vw, 60px);
+  max-width: 920px;
+  margin: 0 auto;
+}
+.step { padding: 8px; }
+.step-num {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--accent-floraison-cta);
+  margin-bottom: 12px;
+}
+.step-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 6px;
+  color: var(--text-floraison-primary);
+}
+.step-title em { font-style: italic; }
+.step-body {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-floraison-primary);
+  opacity: 0.6;
+}
+
+/* === SECTION FINALE === */
+.final {
+  padding: var(--block-padding) var(--gutter);
+  text-align: center;
+}
+.final-phrase {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(20px, 2.6vw, 28px);
+  color: var(--text-floraison-primary);
+  opacity: 0.88;
+  margin-bottom: var(--space-lg);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.final-rarete {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-floraison-primary);
+  opacity: 0.7;
+  margin-bottom: var(--space-lg);
+  letter-spacing: 0.02em;
+}
+
+/* === FOOTER === */
+.footer {
+  position: relative;
+  padding-top: 0;
+}
+.footer-floral {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: var(--space-xl);
+}
+.footer-inner {
+  padding: 0 var(--gutter) var(--space-xl);
+  text-align: center;
+}
+.footer-signature {
+  margin-bottom: var(--space-md);
+}
+.signature-script {
+  font-family: var(--font-jewel);
+  font-size: clamp(28px, 3vw, 36px);
+  color: var(--text-floraison-primary);
+}
+.footer-legal {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-floraison-primary);
+  opacity: 0.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+.footer-legal-links {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--text-floraison-primary);
+  opacity: 0.5;
+}
+.footer-legal-links a:hover { opacity: 1; text-decoration: underline; }
+
+/* =================================================================
+   RESPONSIVE
+   ================================================================= */
+
+/* === TABLET 768-1023 === */
+@media (max-width: 1023px) {
+  .hero-content { margin-top: 260px; }
+  .hero-floral { max-height: 480px; }
+  .cards-grid { gap: 28px; }
+  .mecanique-steps { gap: 36px; }
+}
+
+/* === MOBILE < 768 === */
+@media (max-width: 767px) {
+  :root { --gutter: 22px; }
+
+  .header-logo-img { height: 40px; }
+  .header-back-link { font-size: 10px; }
+
+  .hero { padding-top: 100px; padding-bottom: 60px; min-height: auto; }
+  .hero-floral {
+    max-height: 320px;
+    object-fit: cover;
+    object-position: left top;
+  }
+  .hero-content { margin-top: 200px; }
+  .hero-title { font-size: clamp(34px, 9vw, 42px); }
+  .hero-subtitle { font-size: 16px; }
+  .cta--primary { padding: 12px 28px; font-size: 14px; }
+  .cta--final { padding: 14px 32px; font-size: 14px; }
+  .cta-secondary { display: block; margin-left: 0; margin-top: 14px; }
+
+  .hero-photo { padding: var(--space-xl) var(--gutter); }
+  .hero-photo-frame { aspect-ratio: 4 / 5; }
+
+  .manifeste-opener { font-size: 19px; }
+  .manifeste-body p { font-size: 15px; }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 460px;
+  }
+
+  .mecanique-steps {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 380px;
+  }
+
+  .final-phrase { font-size: 19px; }
+
+  .petals-field { height: 140px; }
+  .petals-field--upper { margin-top: -50px; }
+
+  /* Reduit la densite des petales en mobile (cache 1 sur 2) */
+  .petals-field svg.petal:nth-child(2n) { display: none; }
+}
+
+/* === Performance : reduce motion === */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
